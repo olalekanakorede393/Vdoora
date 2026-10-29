@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | VDOORA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <a class="back-link" href="index.html">← Back to Welcome</a>
+    <h1 class="auth-logo">VDOORA</h1>
+    <p class="auth-description">Create your account and connect.</p>
+
+    <form class="auth-form">
+      <label for="fullname">Full Name</label>
+      <input id="fullname" type="text" placeholder="Enter your full name" required>
+
+      <label for="username">Username</label>
+      <input id="username" type="text" placeholder="Choose a username" required>
+
+      <label for="signup-email">Email Address</label>
+      <input id="signup-email" type="email" placeholder="Enter your email" required>
+
+      <label for="signup-password">Password</label>
+      <input id="signup-password" type="password" placeholder="Create a password" required>
+
+      <label for="confirm-password">Confirm Password</label>
+      <input id="confirm-password" type="password" placeholder="Enter password again" required>
+
+      <button class="primary-button" type="button"
+        onclick="alert('Account creation will be added later.')">
+        Create Account
+      </button>
+    </form>
+
+    <p class="auth-switch">
+      Already have an account? <a href="login.html">Log In</a>
+    </p>
+  </main>
+</body>
+</html>

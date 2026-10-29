@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In | VDOORA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <a class="back-link" href="index.html">← Back to Welcome</a>
+    <h1 class="auth-logo">VDOORA</h1>
+    <p class="auth-description">Welcome back!</p>
+
+    <form class="auth-form">
+      <label for="login-email">Email or Username</label>
+      <input id="login-email" type="text"
+        placeholder="Enter email or username" required>
+
+      <label for="login-password">Password</label>
+      <input id="login-password" type="password"
+        placeholder="Enter your password" required>
+
+      <div class="forgot-row">
+        <a href="forgot-password.html">Forgot password?</a>
+      </div>
+
+      <button class="primary-button" type="button"
+        onclick="alert('Login will be added later.')">
+        Log In
+      </button>
+    </form>
+
+    <p class="auth-switch">
+      Don't have an account? <a href="signup.html">Create Account</a>
+    </p>
+  </main>
+</body>
+</html>
