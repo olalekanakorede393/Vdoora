@@ -1,151 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VDOORA | Chats</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VDOORA | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="dashboard-page">
 
-  <header class="topbar">
-    <a href="index.html" class="brand">
-      <span class="brand-icon">V</span>
-      <span>VDOORA</span>
-    </a>
-    <a href="index.html" class="exit-link">Welcome Page</a>
-  </header>
+    <header class="dashboard-header">
+        <a href="index.html" class="logo">VDOORA<span>.</span></a>
 
-  <main class="dashboard">
-
-    <aside class="sidebar">
-      <h2>Menu</h2>
-      <nav class="side-nav">
-        <a class="active" href="chat.html">💬 Chats</a>
-        <a href="#status">⭕ Status</a>
-        <a href="#contacts">👥 Contacts</a>
-        <a href="#profile">👤 Profile</a>
-        <a href="#settings">⚙️ Settings</a>
-        <a href="#about">ℹ️ About VDOORA</a>
-      </nav>
-
-      <details class="more-options">
-        <summary>More options</summary>
-        <a href="#settings">Settings</a>
-        <a href="#about">About VDOORA</a>
-      </details>
-
-      <p class="sidebar-footer">Chat. Connect. Share.</p>
-    </aside>
-
-    <section class="chat-list">
-      <h2>Messages</h2>
-      <p class="muted">Your recent conversations</p>
-
-      <a class="contact active-contact" href="#conversation">
-        <span class="avatar">T</span>
-        <span class="contact-info">
-          <strong>Tomi</strong>
-          <small>Hey, how are you?</small>
-        </span>
-      </a>
-
-      <a class="contact" href="#conversation">
-        <span class="avatar purple">B</span>
-        <span class="contact-info">
-          <strong>Bestie</strong>
-          <small>See you later ❤️</small>
-        </span>
-      </a>
-
-      <a class="contact" href="#conversation">
-        <span class="avatar green">D</span>
-        <span class="contact-info">
-          <strong>Daniel</strong>
-          <small>Have you finished it?</small>
-        </span>
-      </a>
-
-      <a class="contact" href="#conversation">
-        <span class="avatar orange">C</span>
-        <span class="contact-info">
-          <strong>Chizzy</strong>
-          <small>Good morning!</small>
-        </span>
-      </a>
-
-      <a class="contact" href="#conversation">
-        <span class="avatar pink">F</span>
-        <span class="contact-info">
-          <strong>Faith</strong>
-          <small>Thank you 😊</small>
-        </span>
-      </a>
-    </section>
-
-    <section class="conversation" id="conversation">
-      <header class="conversation-header">
-        <span class="avatar">T</span>
-        <div>
-          <h2>Tomi</h2>
-          <small class="muted">Sample conversation</small>
+        <div class="dashboard-search">
+            <input type="search" placeholder="Search VDOORA..." aria-label="Search VDOORA">
         </div>
-      </header>
 
-      <div class="messages">
-        <p class="message received">Hi! How are you?</p>
-        <p class="message sent">I'm fine, thank you. How about you?</p>
-        <p class="message received">I'm good too 😊</p>
-        <p class="message sent">That's great!</p>
-      </div>
+        <a href="profile.html" class="profile-shortcut">
+            <span class="avatar avatar-purple">U</span>
+            <span>My Profile</span>
+        </a>
+    </header>
 
-      <form class="message-form">
-        <input type="text" placeholder="Type a message..." aria-label="Message">
-        <button type="button"
-          onclick="alert('Sending messages will be added later.')">
-          Send
-        </button>
-      </form>
-      <p class="demo-note">Demo screen — messages are not sent or saved.</p>
-    </section>
+    <div class="dashboard-layout">
 
-    <aside class="info-panel">
-      <section id="status">
-        <h2>Status</h2>
-        <div class="status-circle">+</div>
-        <p>Add a status</p>
-        <small class="muted">Share a moment with friends.</small>
-      </section>
+        <aside class="sidebar">
+            <p class="sidebar-label">YOUR SPACE</p>
 
-      <section id="profile">
-        <h2>My Profile</h2>
-        <div class="profile-avatar">V</div>
-        <h3>Your Name</h3>
-        <p class="muted">@yourusername</p>
-      </section>
+            <nav class="sidebar-nav">
+                <a href="chat.html" class="sidebar-link active">
+                    <span>💬</span> Chats
+                </a>
+                <a href="moments.html" class="sidebar-link">
+                    <span>🎬</span> Moments
+                </a>
+                <a href="communities.html" class="sidebar-link">
+                    <span>👥</span> Circles & Rooms
+                </a>
+                <a href="profile.html" class="sidebar-link">
+                    <span>👤</span> My Profile
+                </a>
+                <a href="settings.html" class="sidebar-link">
+                    <span>🔐</span> Privacy & Safety
+                </a>
+            </nav>
 
-      <section id="contacts">
-        <h2>Contacts</h2>
-        <p>Tomi</p>
-        <p>Bestie</p>
-        <p>Daniel</p>
-        <p>Chizzy</p>
-        <p>Faith</p>
-      </section>
+            <div class="sidebar-bottom">
+                <p class="sidebar-label">VDOORA</p>
+                <a href="index.html" class="sidebar-link">
+                    <span>ℹ️</span> About VDOORA
+                </a>
+                <a href="login.html" class="sidebar-link">
+                    <span>↪️</span> Log In Page
+                </a>
+            </div>
+        </aside>
 
-      <section id="settings">
-        <h2>Settings</h2>
-        <p>Account settings</p>
-        <p>Privacy</p>
-        <p>Notifications</p>
-      </section>
+        <main class="chat-workspace">
 
-      <section id="about">
-        <h2>About VDOORA</h2>
-        <p>VDOORA is a chat website project built to help people chat, connect, and share.</p>
-      </section>
-    </aside>
+            <section class="chat-list-panel">
+                <div class="panel-heading">
+                    <div>
+                        <p class="eyebrow">YOUR CONNECTIONS</p>
+                        <h1>Messages</h1>
+                    </div>
+                    <span class="count-badge">3</span>
+                </div>
 
-  </main>
+                <div class="chat-filter">
+                    <a href="#all-chats" class="filter-active">All</a>
+                    <a href="#unread-chats">Unread</a>
+                    <a href="#groups">Groups</a>
+                </div>
+
+                <div class="chat-search">
+                    <input type="search" placeholder="Find a conversation..." aria-label="Find a conversation">
+                </div>
+
+                <div class="conversation-list" id="all-chats">
+
+                    <a href="#conversation-amina" class="conversation-item selected">
+                        <span class="avatar avatar-pink">A</span>
+                        <span class="conversation-details">
+                            <strong>Amina</strong>
+                            <span>Hey! How are you doing?</span>
+                        </span>
+                        <span class="conversation-meta">
+                            <small>10:45</small>
+                            <span class="unread-dot"></span>
+                        </span>
+                    </a>
+
+                    <a href="#conversation-devs" class="conversation-item" id="groups">
+                        <span class="avatar avatar-green">D</span>
+                        <span class="conversation-details">
+                            <strong>Dev Community</strong>
+                            <span>Welcome to the group!</span>
+                        </span>
+                        <span class="conversation-meta">
+                            <small>09:30</small>
+                        </span>
+                    </a>
+
+                    <a href="#conversation-daniel" class="conversation-item">
+                        <span class="avatar avatar-blue">D</span>
+                        <span class="conversation-details">
+                            <strong>Daniel</strong>
+                            <span>See you later 👋</span>
+                        </span>
+                        <span class="conversation-meta">
+                            <small>Yesterday</small>
+                        </span>
+                    </a>
+
+                </div>
+
+                <p class="demo-note">
+                    Sample conversations for the design preview.
+                </p>
+            </section>
+
+            <section class="conversation-panel" id="conversation-amina">
+
+                <header class="conversation-header">
+                    <span class="avatar avatar-pink">A</span>
+                    <div class="person-heading">
+                        <h2>Amina</h2>
+                        <p><span class="status-dot"></span> Sample conversation</p>
+                    </div>
+                    <span class="conversation-actions">⋯</span>
+                </header>
+
+                <div class="message-area">
+                    <div class="date-divider"><span>Today</span></div>
+
+                    <div class="message-row received">
+                        <span class="avatar avatar-pink small-avatar">A</span>
+                        <div class="message-content">
+                            <p>Hey! Welcome to VDOORA 😊</p>
+                            <small>10:42</small>
+                        </div>
+                    </div>
+
+                    <div class="message-row sent">
+                        <div class="message-content">
+                            <p>Thank you! I'm exploring the platform.</p>
+                            <small>10:43 ✓</small>
+                        </div>
+                    </div>
+
+                    <div class="message-row received">
+                        <span class="avatar avatar-pink small-avatar">A</span>
+                        <div class="message-content">
+                            <p>That's great! There's so much to discover.</p>
+                            <small>10:45</small>
+                        </div>
+                    </div>
+
+                    <div class="message-placeholder">
+                        <span>✦</span>
+                        <p>Your conversations will appear here.</p>
+                        <small>Messaging will be enabled in a later development stage.</small>
+                    </div>
+                </div>
+
+                <form class="message-composer">
+                    <button type="button" class="composer-icon" aria-label="Add attachment">＋</button>
+                    <input type="text" placeholder="Write a message..." aria-label="Write a message" disabled>
+                    <button type="button" class="send-button" disabled>➤</button>
+                </form>
+
+            </section>
+
+            <aside class="info-panel">
+                <div class="profile-preview">
+                    <span class="avatar avatar-purple large-avatar">U</span>
+                    <h2>Your VDOORA Space</h2>
+                    <p>Connect without limits.</p>
+                </div>
+
+                <div class="info-divider"></div>
+
+                <h3>Explore VDOORA</h3>
+
+                <a href="moments.html" class="explore-item">
+                    <span class="explore-icon">🎬</span>
+                    <span>
+                        <strong>Moments</strong>
+                        <small>Photos, videos and updates</small>
+                    </span>
+                </a>
+
+                <a href="communities.html" class="explore-item">
+                    <span class="explore-icon">🌍</span>
+                    <span>
+                        <strong>Global Communities</strong>
+                        <small>Meet people with shared interests</small>
+                    </span>
+                </a>
+
+                <a href="settings.html" class="explore-item">
+                    <span class="explore-icon">🛡️</span>
+                    <span>
+                        <strong>Privacy Shield</strong>
+                        <small>Plan your privacy controls</small>
+                    </span>
+                </a>
+
+                <div class="coming-soon">
+                    <span>✦</span>
+                    <div>
+                        <strong>More is coming</strong>
+                        <p>Voice notes, calls, translation and more.</p>
+                    </div>
+                </div>
+            </aside>
+
+        </main>
+    </div>
+<script src="script.js"></script>
 </body>
 </html>

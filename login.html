@@ -1,39 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log In | VDOORA</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | VDOORA</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="auth-page">
-  <main class="auth-card">
-    <a class="back-link" href="index.html">← Back to Welcome</a>
-    <h1 class="auth-logo">VDOORA</h1>
-    <p class="auth-description">Welcome back!</p>
 
-    <form class="auth-form">
-      <label for="login-email">Email or Username</label>
-      <input id="login-email" type="text"
-        placeholder="Enter email or username" required>
+    <header class="site-header">
+        <a href="index.html" class="logo">VDOORA<span>.</span></a>
+        <a href="index.html" class="login-link">← Back to Home</a>
+    </header>
 
-      <label for="login-password">Password</label>
-      <input id="login-password" type="password"
-        placeholder="Enter your password" required>
+    <main class="auth-container">
+        <section class="auth-card">
 
-      <div class="forgot-row">
-        <a href="forgot-password.html">Forgot password?</a>
-      </div>
+            <a href="index.html" class="logo auth-logo">
+                VDOORA<span>.</span>
+            </a>
 
-      <button class="primary-button" type="button"
-        onclick="alert('Login will be added later.')">
-        Log In
-      </button>
-    </form>
+            <p class="eyebrow">WELCOME BACK</p>
+            <h1>Log in to VDOORA</h1>
+            <p class="auth-description">
+                Your people are just a step away.
+            </p>
 
-    <p class="auth-switch">
-      Don't have an account? <a href="signup.html">Create Account</a>
-    </p>
-  </main>
+            <form action="chat.html" method="get">
+
+                <div class="form-group">
+                    <label for="email">Email address or username</label>
+                    <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        placeholder="Enter email or username"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+                    <a href="forgot-password.html" class="forgot-link">
+                        Forgot password?
+                    </a>
+                </div>
+
+                <label class="checkbox-row">
+                    <input type="checkbox" name="remember" value="yes">
+                    <span>Remember me on this device</span>
+                </label>
+
+                <button type="submit" class="btn btn-primary form-submit">
+                    Log In
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+                New to VDOORA?
+                <a href="signup.html">Create an account</a>
+            </p>
+
+        </section>
+    </main>
+
+    <footer class="auth-footer">
+        <p>© 2026 VDOORA. Connect without limits.</p>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>

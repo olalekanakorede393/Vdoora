@@ -1,42 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create Account | VDOORA</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | VDOORA</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="auth-page">
-  <main class="auth-card">
-    <a class="back-link" href="index.html">← Back to Welcome</a>
-    <h1 class="auth-logo">VDOORA</h1>
-    <p class="auth-description">Create your account and connect.</p>
 
-    <form class="auth-form">
-      <label for="fullname">Full Name</label>
-      <input id="fullname" type="text" placeholder="Enter your full name" required>
+    <header class="site-header">
+        <a href="index.html" class="logo">VDOORA<span>.</span></a>
+        <a href="index.html" class="login-link">← Back to Home</a>
+    </header>
 
-      <label for="username">Username</label>
-      <input id="username" type="text" placeholder="Choose a username" required>
+    <main class="auth-container">
+        <section class="auth-card">
 
-      <label for="signup-email">Email Address</label>
-      <input id="signup-email" type="email" placeholder="Enter your email" required>
+            <a href="index.html" class="logo auth-logo">
+                VDOORA<span>.</span>
+            </a>
 
-      <label for="signup-password">Password</label>
-      <input id="signup-password" type="password" placeholder="Create a password" required>
+            <p class="eyebrow">YOUR WORLD STARTS HERE</p>
+            <h1>Create your account</h1>
+            <p class="auth-description">
+                Join VDOORA and get ready to connect.
+            </p>
 
-      <label for="confirm-password">Confirm Password</label>
-      <input id="confirm-password" type="password" placeholder="Enter password again" required>
+            <form action="login.html" method="get">
 
-      <button class="primary-button" type="button"
-        onclick="alert('Account creation will be added later.')">
-        Create Account
-      </button>
-    </form>
+                <div class="form-group">
+                    <label for="fullname">Full name</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
 
-    <p class="auth-switch">
-      Already have an account? <a href="login.html">Log In</a>
-    </p>
-  </main>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Choose a username"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="United States">United States</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Canada">Canada</option>
+                        <option value="India">India</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="United Arab Emirates">United Arab Emirates</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="Other">Other country</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone number (optional)</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+234 801 234 5678"
+                        autocomplete="tel"
+                    >
+                    <small>You can choose to keep your number private.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+                    <small>Use at least 8 characters.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm password</label>
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm-password"
+                        placeholder="Enter your password again"
+                        minlength="8"
+                        required
+                    >
+                </div>
+
+                <label class="checkbox-row">
+                    <input
+                        type="checkbox"
+                        name="hide-phone"
+                        value="yes"
+                        checked
+                    >
+                    <span>Keep my phone number private</span>
+                </label>
+
+                <label class="checkbox-row">
+                    <input
+                        type="checkbox"
+                        name="terms"
+                        value="accepted"
+                        required
+                    >
+                    <span>I agree to the VDOORA terms and privacy policy.</span>
+                </label>
+
+                <button type="submit" class="btn btn-primary form-submit">
+                    Create Account
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="login.html">Log in</a>
+            </p>
+
+        </section>
+    </main>
+
+    <footer class="auth-footer">
+        <p>© 2026 VDOORA. Connect without limits.</p>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>
